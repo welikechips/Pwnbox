@@ -14,6 +14,9 @@ function install() {
   git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
   ln -s -f .tmux/.tmux.conf .
   cp .tmux/.tmux.conf.local .
+  sudo pip3 install updog
+  out=$(curl https://ip.42.pl/r)
+  cd "${home}/Desktop/" && echo "${out}" > "${out}.txt"
 } 
 
 install "/home/j1v37u2k3y" 2
