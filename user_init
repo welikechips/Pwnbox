@@ -2,4 +2,4 @@
 #This script is executed every time your instance is spawned.
 # shellcheck disable=SC2117
 cd && git clone https://github.com/welikechips/Pwnbox
-cd Pwnbox && bash install.sh j1v37u2k3y 2
+cd Pwnbox && bash install.sh "j1v37u2k3y" "2"
