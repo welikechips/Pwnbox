@@ -20,5 +20,5 @@ function install() {
   cd "${home}/Desktop/" && echo "${out}" > "${out}.txt"
 } 
 
-install "/home/${name}j1v37u2k3y" "${bashrc}"
+install "/home/${name}/j1v37u2k3y" "${bashrc}"
 sudo install "/root" "${bashrc}"
