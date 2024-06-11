@@ -1,9 +1,10 @@
 #!/bin/bash
 #This script is executed every time your instance is spawned.
 # shellcheck disable=SC2117
+name=$1
+bashrc=$2
 function install() {
   home=$1
-  bashrc=$2
   cd "${home}" || exit
   git clone https://github.com/welikechips/chips "${home}/chips"
   # setup chips directory
@@ -19,5 +20,5 @@ function install() {
   cd "${home}/Desktop/" && echo "${out}" > "${out}.txt"
 } 
 
-install "/home/j1v37u2k3y" 2
-sudo install "/root" 2
+install "/home/${name}j1v37u2k3y" "${bashrc}"
+sudo install "/root" "${bashrc}"
