@@ -17,7 +17,7 @@ function install() {
   cp .tmux/.tmux.conf.local .
   sudo pip3 install updog
   out=$(curl https://ip.42.pl/r)
-  cd "${home}/Desktop/" && echo "${out}" > "${out}.txt"
+  cd "${home}/Desktop/" && echo "${out}" > "external_ip.txt"
 } 
 
 install "/home/${name}" "${bashrc}"
